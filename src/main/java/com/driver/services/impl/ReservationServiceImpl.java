@@ -70,7 +70,7 @@ public class ReservationServiceImpl implements ReservationService {
         spot.setOccupied(true);
 
 
-        //found the appropriate spot let make a reservation
+        //found the appropriate spot, let's make a reservation
         Reservation reservation = new Reservation();
         reservation.setNumberOfHours(timeInHours);
         reservation.setSpot(spot);
