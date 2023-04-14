@@ -39,6 +39,7 @@ public class ParkingLotServiceImpl implements ParkingLotService {
 
         //creating new empty spot
         Spot spot = new Spot();
+        spot.setPricePerHour(pricePerHour);
 
         if (numberOfWheels <= 2){
             spot.setSpotType(SpotType.TWO_WHEELER);
@@ -48,7 +49,6 @@ public class ParkingLotServiceImpl implements ParkingLotService {
             spot.setSpotType(SpotType.OTHERS);
         }
 
-        spot.setPricePerHour(pricePerHour);
         spot.setOccupied(false);
         spot.setParkingLot(parkingLot);
 
