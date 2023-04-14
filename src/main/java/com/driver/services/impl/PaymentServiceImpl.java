@@ -28,11 +28,11 @@ public class PaymentServiceImpl implements PaymentService {
 
         //setting up the payment mode
         PaymentMode paymentMode = null;
-        if(mode.toUpperCase().equals(PaymentMode.CASH))
+        if(mode.toUpperCase().equals(PaymentMode.CASH.toString()))
             paymentMode = PaymentMode.CASH;
-        else if(mode.toUpperCase().equals(PaymentMode.CARD))
+        else if(mode.toUpperCase().equals(PaymentMode.CARD.toString()))
             paymentMode = PaymentMode.CARD;
-        else if (mode.toUpperCase().equals(PaymentMode.UPI))
+        else if (mode.toUpperCase().equals(PaymentMode.UPI.toString()))
             paymentMode = PaymentMode.UPI;
 
         if(paymentMode == null)
